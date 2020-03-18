@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: harbor.corp.local/library/nginx:V1
+        image: vmware/nginx
         ports:
         - containerPort: 80
 ---
@@ -29,6 +29,6 @@ spec:
     spec:
       containers:
       - name: db
-        image: harbor.corp.local/library/nginx:V1
+        image: vmware/nginx
         ports:
         - containerPort: 80

@@ -76,7 +76,7 @@ spec:
     spec:
       containers:
       - name: yelb-ui
-        image:  harbor.corp.local/library/restreview-ui:V2
+        image:  vmware/restreview-ui:V2
         ports:
         - containerPort: 80
 ---
@@ -94,7 +94,7 @@ spec:
     spec:
       containers:
       - name: redis-server
-        image: harbor.corp.local/library/restreview-redis:V1
+        image: vmware/restreview-redis:V1
         ports:
         - containerPort: 6379
         volumeMounts:
@@ -119,7 +119,7 @@ spec:
     spec:
       containers:
       - name: yelb-db
-        image:  harbor.corp.local/library/restreview-db:V1
+        image:  vmware/restreview-db:V1
         ports:
         - containerPort: 5432
 ---
@@ -137,6 +137,6 @@ spec:
     spec:
       containers:
       - name: yelb-appserver
-        image:  harbor.corp.local/library/restreview-appserver:V2
+        image:  vmware/restreview-appserver:V2
         ports:
         - containerPort: 4567

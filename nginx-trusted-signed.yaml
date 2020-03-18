@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: harbor.corp.local/trusted/nginx:V2
+        image: vmware/nginx
         ports:
         - containerPort: 80
       imagePullSecrets:
